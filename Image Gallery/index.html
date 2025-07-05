@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery with Filters</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="title">Image Gallery</h1>
+
+ 
+  <div class="filters">
+    <button onclick="filterImage('all')">All</button>
+    <button onclick="filterImage('nature')">Nature</button>
+    <button onclick="filterImage('birds')">Birds</button>
+    <button onclick="filterImage('animals')">Animals</button>
+  </div>
+
+ 
+  <div class="gallery">
+    <div class="container" data-category="nature">
+      <img src="1.jpeg" alt="Nature 1">
+    </div>
+    <div class="container" data-category="nature">
+      <img src="2.jpeg" alt="Nature 2">
+    </div>
+    <div class="container" data-category="nature">
+      <img src="3.jpeg" alt="Nature 3">
+    </div>
+    <div class="container" data-category="nature">
+      <img src="4.jpeg" alt="Nature 4">
+    </div>
+    <div class="container" data-category="nature">
+      <img src="5.jpeg" alt="Nature 5">
+    </div>
+    <div class="container" data-category="nature">
+      <img src="6.jpeg" alt="Nature 6">
+    </div>
+    <div class="container" data-category="nature">
+      <img src="7.jpeg" alt="Nature 7">
+    </div>
+    <div class="container" data-category="nature">
+      <img src="9.jpeg" alt="Nature 8">
+    </div>
+    <div class="container" data-category="animals">
+      <img src="8.jpeg" alt="Animal 1">
+    </div>
+    <div class="container" data-category="animals">
+      <img src="10.jpeg" alt="Animal 2">
+    </div>
+    <div class="container" data-category="animals">
+      <img src="11.jpeg" alt="Animal 3">
+    </div>
+    <div class="container" data-category="birds">
+      <img src="12.jpeg" alt="Bird 1">
+    </div>
+    <div class="container" data-category="birds">
+      <img src="13.jpeg" alt="Bird 2">
+    </div>
+    <div class="container" data-category="birds">
+      <img src="14.jpeg" alt="Bird 3">
+    </div>
+    <div class="container" data-category="birds">
+      <img src="15.jpeg" alt="Bird 4">
+    </div>
+  </div>
+
+  
+  <div id="create" class="create">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <span class="nav-button prev" onclick="showPrev()">&#10094;</span>
+    <img class="create-content" id="createImg">
+    <span class="nav-button next" onclick="showNext()">&#10095;</span>
+    <div class="caption" id="captionText"></div>
+  </div>
+
+  <script src="first.js"></script>
+</body>
+</html>
